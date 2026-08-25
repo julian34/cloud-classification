@@ -1,0 +1,41 @@
+services:
+  cloud-trainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: cloud-classification-trainer
+
+    working_dir: /app
+
+    volumes:
+      - ./dataset:/app/dataset
+      - ./src:/app/src
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./notebooks:/app/notebooks
+      - ./config:/app/config
+
+    ports:
+      - "8888:8888"
+      - "6006:6006"
+
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Asia/Jakarta
+
+    shm_size: "8gb"
+
+    tty: true
+    stdin_open: true
+
+    command: >
+      jupyter lab
+      --ip=0.0.0.0
+      --port=8888
+      --no-browser
+      --allow-root
+      --NotebookApp.token=
+      --NotebookApp.password=
+
+    restart: unless-stopped

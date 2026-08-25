@@ -1,0 +1,17 @@
+dataset/
+models/
+logs/
+.git/
+.gitignore
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.env
+
+.vscode/
+.idea/
+
+notebooks/.ipynb_checkpoints/
