@@ -1,0 +1,52 @@
+# Dataset dan model berukuran besar
+dataset/*
+!dataset/.gitkeep
+models/*
+!models/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Environment dan kredensial
+.env
+.env.*
+*.key
+*.pem
+
+# IDE
+.vscode/
+.idea/
+
+# Sistem operasi
+.DS_Store
+Thumbs.db
+
+# Hasil training
+*.pth
+*.pt
+*.onnx
+*.h5
+*.ckpt
+events.out.tfevents.*
+
+# Arsip dataset
+*.zip
+*.rar
+*.7z
