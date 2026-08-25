@@ -1,5 +1,7 @@
 numpy
 pandas
+seaborn
+
 
 torch
 torchvision
