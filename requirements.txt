@@ -3,8 +3,8 @@ pandas
 seaborn
 
 
-torch
-torchvision
+# torch
+# torchvision
 
 scikit-learn
 
@@ -15,7 +15,7 @@ albumentations
 
 matplotlib
 
-timm
+# timm
 
 tqdm
 
