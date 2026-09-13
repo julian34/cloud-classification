@@ -50,3 +50,5 @@ events.out.tfevents.*
 *.zip
 *.rar
 *.7z
+
+/mobile_apps/
