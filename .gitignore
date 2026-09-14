@@ -52,3 +52,6 @@ events.out.tfevents.*
 *.7z
 
 /mobile_apps/
+
+# Dokumentasi lokal
+/docs/
